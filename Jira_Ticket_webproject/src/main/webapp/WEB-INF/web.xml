@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Jira_Ticket_webproject</display-name>
+<welcome-file-list>
+    <welcome-file>LoginFile.jsp</welcome-file>  
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>Servlet_package.Login_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>register</servlet-name>
+  <servlet-class>Servlet_package.Register_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>create</servlet-name>
+  <servlet-class>Servlet_package.CreateTicket_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>create</servlet-name>
+  <url-pattern>/Create_ticket</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>home</servlet-name>
+  <servlet-class>Servlet_package.Home_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>home</servlet-name>
+  <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>logout</servlet-name>
+  <servlet-class>Servlet_package.Logout_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>logout</servlet-name>
+  <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>delete</servlet-name>
+  <servlet-class>Servlet_package.Deleteticket_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>delete</servlet-name>
+  <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>et</servlet-name>
+  <servlet-class>Servlet_package.UpdateTicket_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>et</servlet-name>
+  <url-pattern>/updateJira</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>edit</servlet-name>
+  <servlet-class>Servlet_package.EditTicket_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>edit</servlet-name>
+  <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>viewticket</servlet-name>
+  <servlet-class>Servlet_package.ViewTicket_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>viewticket</servlet-name>
+  <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>show</servlet-name>
+  <servlet-class>Servlet_package.showCreateTicket</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>show</servlet-name>
+  <url-pattern>/showCreateTicket</url-pattern>
+  </servlet-mapping>
+  
+
+  
+</web-app>
